@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de contatos</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -14,9 +17,25 @@
         </header>
         <form id="form_contacts">
             <input type="text" required placeholder="Nome do contato" name="nome" id="nome"/>
-            <input type="tel" name="nota" id="nota" required placeholder="Número do contato"/>
+            <input type="tel" name="numero" id="numero" required placeholder="Número do contato"/>
             <button type="submit">Adicionar +</button>
         </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Quantidade de contatos: </td>
+                    <td id="contact_total">---</td>
+                </tr>
+            </tfoot>
+        </table>
 
     </div>
     <script src="./js/main.js"></script>
